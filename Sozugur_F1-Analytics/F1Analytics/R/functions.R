@@ -35,4 +35,5 @@ selectYear <- function(inputId, label, years = c("2019", "2020", "2021", "2022",
   selectInput(inputId, label, choices = years)
 }
 
-
+devtools::document()
+devtools::build()

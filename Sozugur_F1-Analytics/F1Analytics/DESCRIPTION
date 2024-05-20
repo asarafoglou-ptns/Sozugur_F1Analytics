@@ -1,0 +1,17 @@
+Package: F1Analytics
+Title: Formula 1 Analytics 
+Version: 0.0.0.9000
+Authors@R: 
+    person("Deniz", "Sozugur", , "deniz.sozugur@student.uva.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package aims to provide a fun way of viewing the Formula 1 
+standings between years 2019-2023. It visualizes the circuits (grand prix) 
+and informs the user of how a certain driver performed, gives profile information 
+of the driver, the rankings of the selected race and displays a meme of the driver.
+
+License: CC BY 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+  shiny 

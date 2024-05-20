@@ -20,9 +20,8 @@ f1_data <- races %>%
 
 ##Function 1####
 
-#' @title Formula 1 Analytics
-#' @description This package aims to provide a fun way of viewing the Formula 1 standings between years 2019-2023.
-#' selectYear this function gives options of years 2019, 2020, 2021, 2022 and 2023 in a drop-down menu
+#' @title select year
+#' @description this function gives options of years 2019, 2020, 2021, 2022 and 2023 in a drop-down menu
 #' selectCircuit selects the circuit based on the selected year in first function
 #' selectDriver selects driver based on the output of previous 2 functions
 
@@ -33,6 +32,5 @@ f1_data <- read_csv('/Users/deniz/Desktop/PTNS2024/Sozugur_F1-Analytics/f1data.c
 selectYear <- function(inputId, label, years = c("2019", "2020", "2021", "2022", "2023")) {
   selectInput(inputId, label, choices = years)
 }
-
 
 

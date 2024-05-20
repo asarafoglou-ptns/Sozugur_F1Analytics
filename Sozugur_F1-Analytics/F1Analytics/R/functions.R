@@ -22,8 +22,10 @@ f1_data <- races %>%
 
 #' @title select year
 #' @description this function gives options of years 2019, 2020, 2021, 2022 and 2023 in a drop-down menu
-#' selectCircuit selects the circuit based on the selected year in first function
-#' selectDriver selects driver based on the output of previous 2 functions
+#' @param inputId input slot that will be used to access the value
+#' @param label label for the selected input
+#' @param years vector of years to choose from: c("2019", "2020", "2021", "2022", "2023")
+#' @return enables user to choose a year
 
 #' data
 f1_data <- read_csv('/Users/deniz/Desktop/PTNS2024/Sozugur_F1-Analytics/f1data.csv")

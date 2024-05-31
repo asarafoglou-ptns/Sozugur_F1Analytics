@@ -11,10 +11,9 @@ library(htmltools)
 library(shinydashboard)
 
 #Install the app
-
-devtools::install_github("asarafoglou-ptns/Sozugur_F1Analytics/F1Analytics")
+devtools::install_github("asarafoglou-ptns/Sozugur_F1Analytics/Sozugur_F1-Analytics/F1Analytics")
 library('F1Analytics')
 
 #Run the app
-source("/Users/deniz/Desktop/Sozugur_F1Analytics/Sozugur_F1-Analytics/F1Analytics.R")
+devtools::source_url("https://raw.githubusercontent.com/asarafoglou-ptns/Sozugur_F1Analytics/main/Sozugur_F1-Analytics/F1Analytics/F1_code.R")
 shiny::shinyApp(ui = ui, server = server)

@@ -8,3 +8,10 @@
 selectYear <- function(inputId, label, years = c("2019", "2020", "2021", "2022", "2023")) {
   selectInput(inputId, label, choices = years)
 }
+devtools::install_github("asarafoglou-ptns/Sozugur_F1Analytics/F1Analytics")
+library('F1Analytics')
+
+#Run the app
+shiny::shinyApp(ui = ui, server = server)
+
+source("/Users/deniz/Desktop/Sozugur_F1Analytics/Sozugur_F1-Analytics/F1Analytics.R")
